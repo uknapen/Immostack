@@ -1,0 +1,135 @@
+#welcome-ads-container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.back-4x4 {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 27px;
+    height: 27px;
+}
+.case-4x4 {
+    background-color: #333;
+    width: 12px;
+    height: 12px;
+    border-radius: 0.2rem;
+}
+.back-1x2 {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 27px;
+}
+.case-1x2 {
+    background-color: #333;
+    width: 24px;
+    height: 12px;
+    border-radius: 0.2rem;
+}
+
+.button-1x2 {
+    padding: 6px 24px;
+    background-color: var(--secondary-color);
+    color: var(--text-button);
+    /* border-radius: 7px; */
+    transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+
+.button-1x2:hover {
+    transform: scale(1.07);
+}
+
+.button-1x2:active {
+    transform: scale(0.9);
+}
+
+.icon-1x2 {
+    padding: 6px 5px;
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+
+.icon-1x2:hover {
+    transform: scale(1.1);
+}
+
+.icon-1x2:active {
+    transform: scale(0.9);
+}
+
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+    /* width: 500px; */
+    /* height: 500px; */
+    object-fit: cover;
+}
+
+.slider-button {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.announcement {
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    border-radius: 8px;
+    margin-inline: 32px;
+    margin: auto;
+    /* background-color: var(--primary-color); */
+    border: 1px solid rgba(219, 226, 239, 0.5);
+    border-radius: 32px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.announcement:hover {
+    .slider-button {
+        display: flex;
+    }
+}
+.announcement {
+    .slider-button {
+        display: none;
+    }
+}
+
+.result-description {
+    text-align: justify;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    /* text-wrap: nowrap; */
+    /* -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; */
+    height: 100px;
+}

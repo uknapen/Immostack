@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="my-style.css" />
+        <link href="./output.css" rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/82b43b0e7c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header">
+            <div class="w-[25%]">
+                <img src="./logo.jpg" alt="" class="w-12 h-12 logo" />
+            </div>
+            <div id="title" class="w-[25%]">ImmoStack</div>
+            <div class="w-[25%] flex justify-end">
+                <div class="header-menu drop-button">
+                    <button>Log In</button>
+                    <button>
+                        <svg
+                            class="w-6 h-6"
+                            aria-hidden="true"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 9-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><span>Login</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Register</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Followed listings</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Blacklisted listings</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Log In</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-bloc">
+                <div class="text-3xl">Votre bien au moindre prix !</div>
+                <div class="text-2xl">
+                    Decouvrez votre prochain bien directement
+                </div>
+                <div class="hero-class-scroller">
+                    <button id="scrollButton">
+                        <svg
+                            class="w-20 h-20"
+                            aria-hidden="true"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 9-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <div
+                class="flex flex-col w-[80%] bg-secondary_theme mx-auto mt-10 p-10 search-part"
+            >
+                <!-- Category -->
+                <div class="flex flex-row">
+                    <div class="button-container">
+                        <button
+                            class="button p-3 bg-secondary_button rounded-t-lg flex justify-center text-base"
+                        >
+                            Renting
+                            <div class="triangle border-b-primary_theme"></div>
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button
+                            class="button p-3 mx-1 bg-secondary_theme rounded-t-lg flex justify-center"
+                        >
+                            Buying
+                            <div
+                                class="triangle border-b-secondary_theme"
+                            ></div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Input -->
+                <div
+                    class="flex flex-row justify-between bg-primary_theme rounded-tr-lg rounded-br-lg rounded-bl-lg"
+                >
+                    <div class="flex flex-row w-[80%]">
+                        <div
+                            class="drop-button m-3 mr-10 flex flex-row justify-between gap-12"
+                        >
+                            <button class="text-lg whitespace-nowrap w-40">
+                                House - Appartement
+                            </button>
+                            <button>
+                                <svg
+                                    class="w-6 h-6"
+                                    aria-hidden="true"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 9-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"
+                                            ><span>Register</span
+                                            ><svg
+                                                class="w-6 h-6"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="m9 5 7 7-7 7"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span>Followed listings</span
+                                            ><svg
+                                                class="w-6 h-6"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="m9 5 7 7-7 7"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span>Blacklisted listings</span
+                                            ><svg
+                                                class="w-6 h-6"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="m9 5 7 7-7 7"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span>Log In</span
+                                            ><svg
+                                                class="w-6 h-6"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="m9 5 7 7-7 7"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <input
+                            class="bg-primary_theme w-full text-lg"
+                            type="text"
+                            placeholder="Location"
+                        />
+                    </div>
+
+                    <div class="flex justify-end items-center mr-1">
+                        <button class="bg-[#dc2626] px-6 h-[85%] rounded-lg">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <!-- Choice -->
+                <div class="flex flex-row pl-1">
+                    <div class="button-container">
+                        <div class="button p-3 mx-1 bg-secondary_theme gap-5">
+                            <button>Price</button>
+                            <button>
+                                <svg
+                                    class="w-6 h-6"
+                                    aria-hidden="true"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 9-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="button p-3 mx-1 bg-secondary_theme gap-5">
+                            <button>Surface</button>
+                            <button>
+                                <svg
+                                    class="w-6 h-6"
+                                    aria-hidden="true"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 9-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="display flex flex-col bg-secondary_theme mx-auto mt-10 mr-10 ml-10 p-5"
+        >
+            <div class="display-choice flex flex-row justify-between">
+                <div class="text-lg p-1 ml-10">X announcement found !</div>
+                <div class="">
+                    <button class="hover:bg-primary_theme p-1 rounded-lg">
+                        <div class="back-4x4">
+                            <div class="case-4x4"></div>
+                            <div class="case-4x4"></div>
+                            <div class="case-4x4"></div>
+                            <div class="case-4x4"></div>
+                        </div>
+                    </button>
+                    <button class="hover:bg-primary_theme p-1 rounded-lg">
+                        <div class="back-1x2">
+                            <div class="case-1x2"></div>
+                            <div class="case-1x2"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="display-element mt-10 h-[1500px]">
+                <!-- flex 1x2 -->
+                <div class="flex flex-col content-center gap-10 w-full">
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[350px] h-[350px] object-cover">
+                                <div class="relative" style="max-width: 800px">
+                                    <img
+                                        class="mySlides w-full object-cover h-[350px] rounded-l-lg"
+                                        src="placeholder1.jpg"
+                                    />
+                                    <img
+                                        class="mySlides w-full object-cover max-h-[350px] rounded-l-lg"
+                                        src="placeholder2.jpg"
+                                    />
+                                    <img
+                                        class="mySlides w-full object-cover max-h-[350px] rounded-l-lg"
+                                        src="placeholder3.jpg"
+                                    />
+                                    <div class="slider-button">
+                                        <div
+                                            class="rounded-full bg-secondary_button pt-2 pb-2 px-3"
+                                            onclick="plusDivs(-1)"
+                                        >
+                                            &#10094;
+                                        </div>
+                                        <div
+                                            class="rounded-full bg-secondary_button pt-2 pb-2 px-3"
+                                            onclick="plusDivs(1)"
+                                        >
+                                            &#10095;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="txt flex flex-col p-3 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row mt-2 gap-5">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-justify">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Rerum dolores, tempore
+                                        fugiat blanditiis sapiente minima
+                                        cupiditate accusantium veritatis
+                                        explicabo impedit saepe, autem vel
+                                        adipisci provident dicta molestiae
+                                        dignissimos. Impedit, sint?
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- flex 2x2 -->
+                <div
+                    class="flex flex-wrap content-center justify-center gap-5 w-full mt-10"
+                >
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center rounded-lg"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[250px]">
+                                <img
+                                    src="./placeholder1.jpg"
+                                    alt=""
+                                    class="w-full h-full object-cover rounded-bl-lg rounded-tl-lg"
+                                />
+                            </div>
+                            <div
+                                class="txt flex flex-col p-2 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row gap-5 mt-2">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center rounded-lg"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[250px]">
+                                <img
+                                    src="./placeholder1.jpg"
+                                    alt=""
+                                    class="w-full h-full object-cover rounded-bl-lg rounded-tl-lg"
+                                />
+                            </div>
+                            <div
+                                class="txt flex flex-col p-2 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row gap-5 mt-2">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center rounded-lg"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[250px]">
+                                <img
+                                    src="./placeholder1.jpg"
+                                    alt=""
+                                    class="w-full h-full object-cover rounded-bl-lg rounded-tl-lg"
+                                />
+                            </div>
+                            <div
+                                class="txt flex flex-col p-2 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row gap-5 mt-2">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center rounded-lg"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[250px]">
+                                <img
+                                    src="./placeholder1.jpg"
+                                    alt=""
+                                    class="w-full h-full object-cover rounded-bl-lg rounded-tl-lg"
+                                />
+                            </div>
+                            <div
+                                class="txt flex flex-col p-2 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row gap-5 mt-2">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 announcement -->
+                    <div
+                        class="announcement flex justify-center content-center rounded-lg"
+                    >
+                        <div
+                            class="bg-secondary_button flex flex-row rounded-lg"
+                        >
+                            <div class="w-[250px]">
+                                <img
+                                    src="./placeholder1.jpg"
+                                    alt=""
+                                    class="w-full h-full object-cover rounded-bl-lg rounded-tl-lg"
+                                />
+                            </div>
+                            <div
+                                class="txt flex flex-col p-2 justify-between w-[70%]"
+                            >
+                                <div class="flex flex-col">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-2xl">Price</div>
+                                        <div class="text-2xl">Agence</div>
+                                    </div>
+                                    <div class="text-lg">
+                                        Name of the property
+                                    </div>
+                                    <div class="text-lg">Location</div>
+                                    <div class="flex flex-row gap-5 mt-2">
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                                />
+                                            </svg>
+                                            <span>38 M²</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                                        stroke="#000000"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>1 room</span>
+                                        </div>
+                                        <div class="flex flex-row gap-1">
+                                            <svg
+                                                viewBox="0 0 512 512"
+                                                fill="#000000"
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                            >
+                                                <g
+                                                    id="SVGRepo_bgCarrier"
+                                                    stroke-width="0"
+                                                ></g>
+                                                <g
+                                                    id="SVGRepo_tracerCarrier"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        fill="var(--ci-primary-color, #000000)"
+                                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                                        class="ci-primary"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <span>2 bathroom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Visit</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="button-1x2">
+                                                <a href="/">Contact</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="icon-1x2">
+                                                <a href="/"
+                                                    ><svg
+                                                        class="w-6 h-6 text-gray-800 dark:text-white"
+                                                        aria-hidden="true"
+                                                        width="24"
+                                                        height="24"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path
+                                                            stroke="currentColor"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{<?php" ?
+            >}>
+            <button id="user-button" onclick="userRedirect()">User</button></a
+        >
+
+        <button id="conpany-button" onclick="compRedirect()">Company</button>
+
+        <script>
+            const userRedirect = () => {
+                document
+                    .querySelector("#user-button")
+                    .addEventListener("click", (e) => {
+                        console.log();
+                    });
+            };
+
+            const handleButtonUser = () => {};
+        </script>
+    </body>
+</html>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem pariatur,
+neque magnam iure adipisci impedit culpa deserunt eum aliquid consectetur
+assumenda dolorum suscipit odio ex esse consequatur! Quaerat, provident. const
+doc... !== null

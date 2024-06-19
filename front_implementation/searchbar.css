@@ -1,0 +1,75 @@
+#search-part {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+}
+
+.button-search-triangle {
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid;
+}
+
+.button-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--text-button);
+}
+.search-search-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    background-color: var(--secondary-color);
+}
+.search-search-choice select {
+    color: var(--text-button);
+    background-color: inherit;
+    border: 0;
+}
+
+#search-bar {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#search-select-type {
+    border: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: large;
+    padding: 0px 8px;
+    padding-right: 88px;
+
+    height: 100%;
+}
+
+#search-select-type:focus,
+#search-select-type:active {
+    border: 0;
+}
+
+#search-input {
+    background-color: var(--background-color);
+    width: 100%;
+    font-size: large;
+    border: 0;
+}
+
+#search-submit {
+    background-color: var(--button-color);
+    padding: 0px 24px;
+    height: 85%;
+    border-radius: 8px;
+    color: var(--text-button);
+}

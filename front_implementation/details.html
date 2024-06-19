@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="my-style.css" />
+        <link href="./output.css" rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/82b43b0e7c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header">
+            <div class="w-[25%]">
+                <img src="./logo.jpg" alt="" class="w-12 h-12 logo" />
+            </div>
+            <div id="title" class="w-[25%]">ImmoStack</div>
+            <div class="w-[25%] flex justify-end">
+                <div class="header-menu drop-button">
+                    <button>Log In</button>
+                    <button>
+                        <svg
+                            class="w-6 h-6"
+                            aria-hidden="true"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 9-7 7-7-7"
+                            />
+                        </svg>
+                    </button>
+
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><span>Login</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Register</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Followed listings</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Blacklisted listings</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><span>Log In</span
+                                    ><svg
+                                        class="w-6 h-6"
+                                        aria-hidden="true"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="m9 5 7 7-7 7"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col mx-auto mt-10 p-5 summ-page">
+            <!-- Title -->
+            <div class="text-3xl">Title of the properties</div>
+            <!-- Main Content -->
+            <div
+                class="container p-4 mt-4 rounded-lg mx-auto flex justify-between"
+            >
+                <!-- Left Column -->
+                <div class="announcement">
+                    <img class="mySlides-summ" src="placeholder2.jpg" />
+                </div>
+
+                <!-- Right Column -->
+                <div
+                    class="announcement-summ flex flex-col gap-2 bg-secondary_button rounded-lg"
+                >
+                    <!-- Price -->
+                    <div class="summ-leftmenu-border">
+                        <span>360.000E - 1.654.320E</span>
+                    </div>
+                    <!-- Localisation -->
+                    <div class="summ-leftmenu-border">Localisation</div>
+                    <!-- Agency Name -->
+                    <div class="summ-leftmenu-border">Agence</div>
+                    <!-- Surface + Room + Bathroom -->
+                    <div class="flex summ-leftmenu-border justify-between">
+                        <div class="flex flex-row gap-1">
+                            <svg
+                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                aria-hidden="true"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8 4H4m0 0v4m0-4 5 5m7-5h4m0 0v4m0-4-5 5M8 20H4m0 0v-4m0 4 5-5m7 5h4m0 0v-4m0 4-5-5"
+                                />
+                            </svg>
+                            <span>38 M²</span>
+                        </div>
+                        <div class="flex flex-row gap-1">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                class="w-6 h-6 text-gray-800 dark:text-white"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z"
+                                        stroke="#000000"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span>1 room</span>
+                        </div>
+                        <div class="flex flex-row gap-1">
+                            <svg
+                                viewBox="0 0 512 512"
+                                fill="#000000"
+                                class="w-6 h-6 text-gray-800 dark:text-white"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        fill="var(--ci-primary-color, #000000)"
+                                        d="M464,280H80V100A51.258,51.258,0,0,1,95.113,63.515l.4-.4a51.691,51.691,0,0,1,58.6-10.162,79.1,79.1,0,0,0,11.778,96.627l10.951,10.951-20.157,20.158,22.626,22.626,20.157-20.157h0L311.157,71.471h0l20.157-20.157L308.687,28.687,288.529,48.844,277.578,37.893a79.086,79.086,0,0,0-100.929-8.976A83.61,83.61,0,0,0,72.887,40.485l-.4.4A83.054,83.054,0,0,0,48,100V280H16v32H48v30.7a23.95,23.95,0,0,0,1.232,7.589L79,439.589A23.969,23.969,0,0,0,101.766,456h12.9L103,496h33.333L148,456H356.1l12,40H401.5l-12-40h20.73A23.969,23.969,0,0,0,433,439.589l29.766-89.3A23.982,23.982,0,0,0,464,342.7V312h32V280ZM188.52,60.52a47.025,47.025,0,0,1,66.431,0L265.9,71.471,199.471,137.9,188.52,126.951A47.027,47.027,0,0,1,188.52,60.52ZM432,341.4,404.468,424H107.532L80,341.4V312H432Z"
+                                        class="ci-primary"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span>2 bathroom</span>
+                        </div>
+                    </div>
+                    <!-- Year + Energy Class + Thermal Class -->
+                    <div class="summ-leftmenu-border flex justify-between">
+                        <div class="flex flex-row gap-1">
+                            <svg
+                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+                                />
+                            </svg>
+
+                            <span>1998</span>
+                        </div>
+                        <div class="flex flex-row gap-1">
+                            <div class="letter-icon">I</div>
+                            <span>Energy</span>
+                        </div>
+                        <!-- Type of contract -->
+                        <div class="flex flex-row gap-1">
+                            <div class="letter-icon">I</div>
+                            <span>Sales</span>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="flex flex-col">
+                        <div class="contact-details">
+                            <svg
+                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
+                                />
+                            </svg>
+
+                            <span class="ml-3">See contact details</span>
+                        </div>
+                        <div>
+                            <form action="/">
+                                <textarea name="message" id="contact-message">
+I'm interested in this property. I'd like to have more information
+                                            </textarea
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Your name"
+                                    class="contact-input"
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your email"
+                                    class="contact-input"
+                                />
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Your phone"
+                                    class="contact-input"
+                                />
+                                <button type="submit" class="contact-submit">
+                                    Send message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ads Details -->
+        <div
+            class="flex flex-col mx-auto mt-10 p-5 summ-page bg-secondary_theme rounded-lg gap-5"
+        >
+            <!-- Description details -->
+            <div>
+                <h1>Description</h1>
+                <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae facere nesciunt sequi molestias libero eum
+                    blanditiis est, odio esse eos sint distinctio id, voluptate
+                    perferendis corrupti officiis iste, non quidem.</span
+                >
+            </div>
+            <!-- Features details -->
+            <div>
+                <h1>Features</h1>
+                <div class="flex justify-around mt-5">
+                    <div class="features-container bg-secondary_button">
+                        <!-- Date of post -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Listing date:</span>
+                            </div>
+                            <span>X day ago</span>
+                        </div>
+                        <!-- Price -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Price:</span>
+                            </div>
+                            <span>350 000e</span>
+                        </div>
+                        <!-- Contract -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Contract:</span>
+                            </div>
+                            <span>Sales</span>
+                        </div>
+                        <!-- Date of build -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Year of construction:</span>
+                            </div>
+                            <span>1998</span>
+                        </div>
+                        <!-- City -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>City:</span>
+                            </div>
+                            <span>Luxembourg</span>
+                        </div>
+                        <!-- Heating Type -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Heating:</span>
+                            </div>
+                            <span>Gaz</span>
+                        </div>
+                        <!-- Energy Class -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Energy class:</span>
+                            </div>
+                            <span>A</span>
+                        </div>
+                        <!-- Thermal Class -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Thermal class:</span>
+                            </div>
+                            <span>B</span>
+                        </div>
+                    </div>
+
+                    <div class="features-container bg-secondary_button">
+                        <!-- Type of property -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Property type:</span>
+                            </div>
+                            <span>House</span>
+                        </div>
+                        <!-- Surface -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Surface:</span>
+                            </div>
+                            <span>X</span>
+                        </div>
+                        <!-- Basement -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Basement:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <!-- Garage -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Garage:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <!-- Garden -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Garden:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <!-- Balcony -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Balcony:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <!-- Floor -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Floor:</span>
+                            </div>
+                            <span>3</span>
+                        </div>
+                        <!-- Lift -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Lift:</span>
+                            </div>
+                            <span>No</span>
+                        </div>
+                    </div>
+
+                    <div class="features-container bg-secondary_button">
+                        <!-- furnished -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Furnished:</span>
+                            </div>
+                            <span>No</span>
+                        </div>
+                        <!-- Room -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Room:</span>
+                            </div>
+                            <span>7</span>
+                        </div>
+                        <!-- Bedroom -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Bedroom:</span>
+                            </div>
+                            <span>3</span>
+                        </div>
+                        <!-- Bathroom -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Bathroom:</span>
+                            </div>
+                            <span>2</span>
+                        </div>
+                        <!-- Separeted toilet -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Separeted toilet:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <!-- Fitted Kitchen -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-1">
+                                <div class="letter-icon">I</div>
+                                <span>Fitted Kitchen:</span>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div>
+                <h1>Localisation</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.7331315203774!2d5.9584477769244755!3d49.50843345474139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47953531c5e96dfd%3A0x54c9ca36434c8358!2sCNFPC%20-%20Esch%20-%20Site%20Sommet!5e0!3m2!1sen!2slu!4v1714923355716!5m2!1sen!2slu"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="features-map"
+                ></iframe>
+            </div>
+
+            <!-- Surroundings -->
+            <div>
+                <h1>Surroundings</h1>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt magnam ipsum consequuntur a assumenda nemo recusandae
+                    beatae, quod saepe magni doloribus eligendi odit placeat
+                    aliquid! Cum fugiat aut nulla pariatur? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Qui pariatur illo,
+                    amet ad animi error natus cumque quod illum vero! Corrupti
+                    cupiditate minima exercitationem adipisci iste nisi at
+                    error. Deleniti. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quisquam perferendis nobis, exercitationem
+                    expedita facilis in nesciunt? Praesentium iure enim dolorem
+                    corrupti, ipsam, quam, dolore consequatur accusantium
+                    officiis perspiciatis quo voluptates!
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
