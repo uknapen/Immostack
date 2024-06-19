@@ -1,6 +1,7 @@
 # Immostack
 
-This project was done for the final project of the 2024 FullStack bootcamp. By 2, we took 3 weeks to realise it.
+This project was done for the final project of the 2024 FullStack bootcamp. 
+It was done in 3 weeks by 2 people (myself and Alexis Zampieno).
 
 ## Project
 
@@ -28,7 +29,7 @@ If you want to create an add you will need the certificat [cacert.pem](https://c
 
 ## Todo
 
-We won't work anymore on this project but this is what we have planned for the next
+I won't work anymore on this project but this is what I have planned if i would continue working on it:
 
 -   Allow admin to delete any listings
 -   Create the edit listings for the professional account
